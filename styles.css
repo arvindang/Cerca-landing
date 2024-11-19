@@ -19,114 +19,153 @@ body {
     padding: 20px;
 }
 
+p, ul, ol {
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+ul, ol {
+    padding-left: 2.5em;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
 }
 
-header {
-    text-align: left;
-    margin-bottom: 40px;
-    max-width: 460px;
+.container-small {
+    max-width: 600px;
+    width: 100%;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #007BFF;
-    padding-top: 1em;
+/* Hero Section */
+header.hero {
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-header p {
+header.hero .logo {
+    max-width: 140px;
+    margin-bottom: 20px;
+}
+
+header.hero h1 {
     font-size: 1.2em;
-    color: #666;
+    color: #333;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
+header.hero .mockups {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+header.hero .mockups img {
+    max-width: 600px;
+    height: auto;
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Features Section */
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr); /* Enforces 2 columns on medium-sized screens */
+    }
 }
 
 .feature {
-    text-align: left;
-    padding: 40px;
-    background: #fafafa;
-    border-radius: 24px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.feature img {
-    max-width: 100%;
+.feature .icon-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    background: #F3F2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature .icon-circle img {
+    max-width: 30px;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .feature h2 {
-    font-size: 1em;
-    margin-bottom: 8px;
-    color: #333;
-    margin-top: auto;
+    font-size: 1.1em;
+    color: #007BFF;
 }
 
 .feature p {
-    font-size: 1em;
+    font-size: 0.95em;
     color: #666;
 }
 
-.waitlist {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 6em;
-    max-width: 560px;
+/* Call-to-Action Section */
+.cta {
+    margin-top: 40px;
 }
 
-.waitlist h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.waitlist p {
-    font-size: 1.2em;
-    color: #666;
-    /* max-width: 0px; */
-    margin: 0 auto 20px auto;
-}
-
-.waitlist form {
-    display: flex;
-    justify-content: center;
-}
-
-.waitlist input[type="email"] {
-    padding: 10px;
+.cta .download-button {
     font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    width: 300px;
-    max-width: 80%;
-}
-
-.waitlist button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
+    padding: 12px 24px;
     background-color: #007BFF;
+    color: #fff;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.waitlist button:hover {
+.cta .download-button:hover {
     background-color: #0056b3;
 }
 
+/* Footer */
 footer {
-    text-align: center;
+    margin-top: 60px;
     padding: 20px 0;
     font-size: 0.9em;
     color: #666;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .links {
+    margin-top: 10px;
 }

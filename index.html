@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerca.me</title>
+    <title>Cerca: Your to-do list for places</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2232%22>🌇</text></svg>">    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Cerca.me 🥂</h1>
-            <p>Discover and keep track of the best bars and restaurants, curated and organized for you.</p>
+        <!-- Hero Section -->
+        <header class="hero">
+            <a href="/"><img src="assets/cerca_logo.png" alt="Cerca Logo" class="logo"></a>
+            <h1>Keep track of the best spots, curated and organized for you.</h1>
+            <div class="mockups">
+                <img src="assets/iOS_preview.png" alt="Phone showing Cities view">
+                <!-- <img src="assets/mockup_right.png" alt="Phone showing Nearby view"> -->
+            </div>
         </header>
         
+        <!-- Features Section -->
         <section class="features">
             <div class="feature">
-                <img src="assets/group_view.png" alt="City & Neighborhood Organization">
-                <h2>Organized by City & Neighborhoods</h2>
-                <p>Your saved places are automatically organized by City & Neighborhood for easy browsing.</p>
+                <div class="icon-circle">
+                    <img src="assets/add_icon.png" alt="Add Icon">
+                </div>
+                <h2>Keep Tabs of Places</h2>
+                <p>Discover new places and save your favorites effortlessly.</p>
             </div>
+            <div class="feature">
+                <div class="icon-circle">
+                    <img src="assets/search_icon.png" alt="Search Icon">
+                </div>
+                <h2>Search & Save with Ease</h2>
+                <p>Look up places on the go, save them with a tap.</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle">
+                    <img src="assets/city_icon.png" alt="City Icon">
+                </div>
+                <h2>Organized by City</h2>
+                <p>We organize your places by city and neighborhood automatically.</p>
+            </div>
+            <div class="feature">
+                <div class="icon-circle">
+                    <img src="assets/sort_icon.png" alt="City Icon">
+                </div>
+                <h2>Sorted Just the Way You Like</h2>
+                <p>Browse your places by what's closest, newly discovered, or starred as a favorite.</p>
+            </div>
+        </section>
 
-            <div class="feature">
-                <img src="assets/city_view.png" alt="Recommendations Based on Your Favorites">
-                <h2>Recommendations Based on Favorites</h2>
-                <p>Find places and neighborhoods you'll like based on your past favorites from other cities.</p>
-            </div>        
-            
-            <div class="feature">
-                <img src="assets/subscribe_view.png" alt="Track Your Favorites">
-                <h2>Share & Subscribe</h2>
-                <p>Subscribe or share your lists with friends and family to keep everyone in the loop.</p>
-            </div>       
-            
-            <div class="feature">
-                <img src="assets/search_view.png" alt="Add Places Easily">
-                <h2>Add Places Easily</h2>
-                <p>Quickly find and add new places to your lists. See hours, location and distance from you.</p>
-            </div>
-        </section>
-        
-        <section class="waitlist">
-            <h2>Coming Soon to iOS & Android</h2>
-            <p>Be one of the first to try our alpha release on TestFlight. Share your feedback, and help us shape the future of Cerca. We won't spam you, promise.</p>
-            <form id="waitlist-form">
-                <input id="email-input" type="email" placeholder="Your Email Address" required>
-                <button type="submit">Join the Alpha</button>
-            </form>
-        </section>
-        
+        <!-- Call to Action -->
+        <!-- <section class="cta">
+            <button class="download-button">Download in the App Store</button>
+        </section> -->
+
+        <!-- Footer -->
         <footer>
-            <p>© 2024 Cerca. All rights reserved.</p>
+            <p>👋, I’m Arvin— Cerca’s managed by just me. <a href="#">Report 🐞 or 💡</a></p>
+            <div class="links">
+                <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a>
+            </div>
+            <p>© 2024 Cerca</p>
         </footer>
     </div>
 
